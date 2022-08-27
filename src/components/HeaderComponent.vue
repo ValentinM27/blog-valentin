@@ -1,9 +1,11 @@
 <template>
   <div class="header">
     <div class="header-left">
-      <a href="/">
-        <img :src="mainLogo" alt="Logo principal" class="header-logo" />
-      </a>
+      <q-item>
+        <a href="/">
+          <img :src="mainLogo" alt="Logo principal" class="header-logo" />
+        </a>
+      </q-item>
       <q-item
         class="header-menu"
         active-class="header-menu-active"
