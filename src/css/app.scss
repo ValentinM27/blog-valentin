@@ -1,5 +1,4 @@
 // app global css in SCSS form
-
 @font-face {
   font-family: 'Sora';
   font-style: normal;
@@ -29,6 +28,13 @@ body {
   font-family: 'Sora';
 }
 
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
+
 .header {
   color: $primary;
   width: 100%;
@@ -41,11 +47,18 @@ body {
     align-items: center;
     display: flex;
     font-weight: 700;
-    div {
+    .q-item {
       transition: 0.3s;
       margin-left: 25px;
     }
-    div:hover {
+    .header-menu-active {
+      color: $secondary;
+    }
+    .q-item:hover {
+      .q-focus-helper {
+        background: transparent !important;
+        opacity: 0 !important;
+      }
       transition: 0.3s;
       color: $secondary;
     }
