@@ -12,7 +12,7 @@
         :active="activeLink === 'home'"
         @click="activeLink = 'home'"
       >
-        Acceuil
+        Accueil
       </q-item>
       <q-item
         class="header-menu"

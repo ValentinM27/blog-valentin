@@ -84,3 +84,30 @@ img {
     }
   }
 }
+
+.article-card-container {
+  margin: 15px;
+  img {
+    width: 100%;
+    height: 100%;
+    max-width: 450px;
+    min-width: 300px;
+    border-radius: 3px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .article-card-title {
+    font-weight: 700;
+    font-size: 1.5em;
+  }
+}
+
+.index-container {
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
