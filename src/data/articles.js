@@ -1,6 +1,6 @@
 const ArticlesData = [
   {
-    id: 1,
+    id: 0,
     title: 'Test',
     date: '2015-06-01',
     tags: ['test', 'vue'],

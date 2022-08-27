@@ -9,7 +9,6 @@ export const ArticlesStore = defineStore('articles', {
 
   getters: {
     getArticles(state) {
-      console.log('hello');
       return state.articles;
     },
     getArticlesById(state) {

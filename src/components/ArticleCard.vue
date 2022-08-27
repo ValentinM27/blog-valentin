@@ -1,7 +1,16 @@
 <template>
   <div class="article-card-container">
     <div>
-      <img :src="props.article.pictureUrl" />
+      <router-link
+        :to="{
+          name: 'article',
+          params: {
+            idarticle: props.article.id,
+          },
+        }"
+      >
+        <img :src="props.article.pictureUrl" />
+      </router-link>
     </div>
     <div class="article-head">
       {{ props.article.date }} |
