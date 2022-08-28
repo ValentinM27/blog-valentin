@@ -1,4 +1,27 @@
-<template>{{ article }}</template>
+<template>
+  <div class="article-container">
+    <div class="article-title">{{ article.title }}</div>
+    <div class="article-date">
+      {{ article.date }} |
+      <q-chip v-for="tag in article.tags" :key="tag" class="tag-ship">
+        {{ tag }}
+      </q-chip>
+    </div>
+    <div class="article-illustration">
+      <img :src="article.pictureUrl" />
+    </div>
+    <div class="article-content-container">
+      <div v-for="paragraph in article.paragraphs" :key="paragraph.id">
+        <div class="paragraph-title" v-if="paragraph.subtitle">
+          {{ paragraph.subtitle }}
+        </div>
+        <div class="paragraph-content">
+          {{ paragraph.content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';

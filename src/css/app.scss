@@ -16,13 +16,19 @@
 @font-face {
   font-family: 'Sora';
   font-style: normal;
+  font-weight: 500;
+  src: url('src/assets/fonts/Sora-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Sora';
+  font-style: normal;
   font-weight: 700;
   src: url('src/assets/fonts/Sora-Bold.ttf') format('truetype');
 }
 
 html,
 body {
-  font-size: 13;
   max-width: 100%;
   overflow-x: hidden;
   font-family: 'Sora';
@@ -115,4 +121,40 @@ img {
   gap: 20px;
   align-items: center;
   justify-content: center;
+}
+
+.article-container {
+  padding: 40px;
+  max-width: 960px;
+  margin: auto;
+  font-size: 14px !important;
+
+  .article-illustration {
+    display: flex;
+    margin: 20px;
+    img {
+      width: 100%;
+      max-width: 680px;
+      margin: auto;
+      border-radius: 6px;
+    }
+  }
+
+  .article-title {
+    font-weight: 700;
+    font-size: 42px;
+  }
+
+  .article-content-container {
+    text-align: justify;
+    .paragraph-title {
+      font-weight: 500;
+      font-size: 28px;
+    }
+
+    .paragraph-content {
+      margin: 15px 0 30px 0;
+      text-indent: 18px;
+    }
+  }
 }

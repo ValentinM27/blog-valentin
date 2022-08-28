@@ -1,4 +1,5 @@
 export interface Paragraph {
+  id: number;
   subtitle?: string;
   content?: string;
 }
