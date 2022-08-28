@@ -15,7 +15,7 @@
     <div class="article-head">
       {{ props.article.date }} |
       <q-chip v-for="tag in props.article.tags" :key="tag" class="tag-ship">
-        {{ tag }}
+        {{ tag.toLowerCase() }}
       </q-chip>
     </div>
     <div class="article-card-title">

@@ -1,125 +1,26 @@
 const ArticlesData = [
   {
-    id: 0,
-    title: 'Test',
-    date: '2015-06-01',
-    tags: ['test', 'vue'],
-    summary: 'CMS réalisé en Vue3 avec le framework Quasar',
+    id: 1,
+    date: '28-08-2022',
     pictureUrl: 'src/assets/resources/vue.png',
     paragraphs: [
       {
-        id: 0,
-        subtitle: 'Le but',
-        content:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at tortor felis. Proin ut ex vitae mauris pharetra ornare sit amet non velit. Ut varius dui eget massa eleifend suscipit. Integer aliquam ultrices quam, vitae sodales sapien rutrum et. Nam mollis odio at mattis fermentum. In ac accumsan nisl, quis bibendum lacus. Etiam euismod pharetra justo congue aliquet. Cras congue sodales semper. Suspendisse malesuada consequat dui, sit amet pellentesque urna lacinia vitae. Ut non eleifend arcu. Nullam lacinia rutrum magna quis finibus. Aliquam dictum nisl eget dolor cursus suscipit sed ut nibh. Praesent facilisis, dolor consectetur condimentum finibus, justo dolor porta nulla, in laoreet ligula nibh condimentum velit.',
-      },
-      {
         id: 1,
+        subtitle: 'Lorem Ipsum',
         content:
-          'Donec sed enim at massa ornare aliquam sit amet eu libero. Donec auctor dignissim est, at scelerisque ex imperdiet sit amet. Sed facilisis lobortis leo, et luctus erat pretium tristique. Quisque eu feugiat arcu, ac hendrerit augue. Integer vulputate porta lobortis. Proin vehicula semper odio vehicula pretium. Pellentesque dictum ipsum vel ornare efficitur. Nam feugiat gravida luctus. In hac habitasse platea dictumst. Morbi commodo lobortis leo, a mollis tellus pretium ac. Nam et odio eu neque mattis volutpat.',
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu diam laoreet, viverra purus sit amet, facilisis sem. Sed convallis molestie lorem, vel volutpat nibh. Praesent placerat id dolor sollicitudin accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean elementum eget mauris a tempor. Fusce sit amet aliquet arcu. Donec enim diam, aliquam in elementum sed, porttitor id nisl. Mauris laoreet, nisi sollicitudin pharetra pulvinar, lectus ex elementum purus, eu feugiat urna arcu eget turpis. Donec finibus tincidunt tempor. In ultricies odio vitae urna finibus, a sagittis sem accumsan. Fusce eget vehicula sapien. Curabitur enim ligula, ornare vel ligula sed, dictum tempor purus. Nullam neque ante, mollis et rhoncus at, varius in est. Aliquam ornare consequat mauris at lacinia. Vivamus a purus in leo ultricies faucibus et fringilla sapien. Suspendisse potenti.',
       },
       {
         id: 2,
         content:
-          'Donec sed enim at massa ornare aliquam sit amet eu libero. Donec auctor dignissim est, at scelerisque ex imperdiet sit amet. Sed facilisis lobortis leo, et luctus erat pretium tristique. Quisque eu feugiat arcu, ac hendrerit augue. Integer vulputate porta lobortis. Proin vehicula semper odio vehicula pretium. Pellentesque dictum ipsum vel ornare efficitur. Nam feugiat gravida luctus. In hac habitasse platea dictumst. Morbi commodo lobortis leo, a mollis tellus pretium ac. Nam et odio eu neque mattis volutpat.',
-      },
-      {
-        id: 3,
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu diam laoreet, viverra purus sit amet, facilisis sem. Sed convallis molestie lorem, vel volutpat nibh. Praesent placerat id dolor sollicitudin accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean elementum eget mauris a tempor. Fusce sit amet aliquet arcu. Donec enim diam, aliquam in elementum sed, porttitor id nisl. Mauris laoreet, nisi sollicitudin pharetra pulvinar, lectus ex elementum purus, eu feugiat urna arcu eget turpis. Donec finibus tincidunt tempor. In ultricies odio vitae urna finibus, a sagittis sem accumsan. Fusce eget vehicula sapien. Curabitur enim ligula, ornare vel ligula sed, dictum tempor purus. Nullam neque ante, mollis et rhoncus at, varius in est. Aliquam ornare consequat mauris at lacinia. Vivamus a purus in leo ultricies faucibus et fringilla sapien. Suspendisse potenti.',
         subtitle: 'Conclusion',
-        content:
-          'Donec sed enim at massa ornare aliquam sit amet eu libero. Donec auctor dignissim est, at scelerisque ex imperdiet sit amet. Sed facilisis lobortis leo, et luctus erat pretium tristique. Quisque eu feugiat arcu, ac hendrerit augue. Integer vulputate porta lobortis. Proin vehicula semper odio vehicula pretium. Pellentesque dictum ipsum vel ornare efficitur. Nam feugiat gravida luctus. In hac habitasse platea dictumst. Morbi commodo lobortis leo, a mollis tellus pretium ac. Nam et odio eu neque mattis volutpat.',
       },
     ],
-  },
-  {
-    id: 1,
-    title: 'Test',
-    date: '2015-06-01',
-    tags: ['test', 'vue'],
-    summary: 'CMS réalisé en Vue3 avec le framework Quasar',
-    pictureUrl: 'src/assets/resources/vue.png',
-    paragraphs: [
-      {
-        id: 0,
-        subtitle: 'Le but',
-        content: 'Ce projet à pour but de créer un CMS',
-      },
-    ],
-  },
-  {
-    id: 2,
-    title: 'Test',
-    date: '2015-06-01',
-    tags: ['test', 'vue'],
-    summary: 'CMS réalisé en Vue3 avec le framework Quasar',
-    pictureUrl: 'src/assets/resources/vue.png',
-    paragraphs: [
-      {
-        id: 0,
-        subtitle: 'Le but',
-        content: 'Ce projet à pour but de créer un CMS',
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: 'Test',
-    date: '2015-06-01',
-    tags: ['test', 'vue'],
-    summary: 'CMS réalisé en Vue3 avec le framework Quasar',
-    pictureUrl: 'src/assets/resources/vue.png',
-    paragraphs: [
-      {
-        id: 0,
-        subtitle: 'Le but',
-        content: 'Ce projet à pour but de créer un CMS',
-      },
-    ],
-  },
-  {
-    id: 4,
-    title: 'Test',
-    date: '2015-06-01',
-    tags: ['test', 'vue'],
-    summary: 'CMS réalisé en Vue3 avec le framework Quasar',
-    pictureUrl: 'src/assets/resources/vue.png',
-    paragraphs: [
-      {
-        id: 0,
-        subtitle: 'Le but',
-        content: 'Ce projet à pour but de créer un CMS',
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: 'Test',
-    date: '2015-06-01',
-    tags: ['test', 'vue'],
-    summary: 'CMS réalisé en Vue3 avec le framework Quasar',
-    pictureUrl: 'src/assets/resources/vue.png',
-    paragraphs: [
-      {
-        id: 0,
-        subtitle: 'Le but',
-        content: 'Ce projet à pour but de créer un CMS',
-      },
-    ],
-  },
-  {
-    id: 6,
-    title: 'Test',
-    date: '2015-06-01',
-    tags: ['test', 'vue'],
-    summary: 'CMS réalisé en Vue3 avec le framework Quasar',
-    pictureUrl: 'src/assets/resources/vue.png',
-    paragraphs: [
-      {
-        id: 0,
-        subtitle: 'Le but',
-        content: 'Ce projet à pour but de créer un CMS',
-      },
-    ],
+    tags: ['vue', 'Quasar', 'articles'],
+    title: 'Ce site, Vue3 et Quasar',
+    summary:
+      'Ce site a pour but de présenter des articles. Il est réalisé en Vue3 et Quasar',
   },
 ];
 

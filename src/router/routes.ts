@@ -15,6 +15,12 @@ const routes: RouteRecordRaw[] = [
         component: () => import('pages/ArticleView.vue'),
         props: true,
       },
+      {
+        path: 'generate',
+        name: 'generate',
+        component: () => import('pages/ArticleGenerator.vue'),
+        props: true,
+      },
     ],
   },
 

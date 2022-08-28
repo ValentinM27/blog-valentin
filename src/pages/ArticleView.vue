@@ -4,7 +4,7 @@
     <div class="article-date">
       {{ article.date }} |
       <q-chip v-for="tag in article.tags" :key="tag" class="tag-ship">
-        {{ tag }}
+        {{ tag.toLowerCase() }}
       </q-chip>
     </div>
     <div class="article-illustration">
