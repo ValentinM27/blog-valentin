@@ -21,6 +21,11 @@ const routes: RouteRecordRaw[] = [
         component: () => import('pages/ArticleGenerator.vue'),
         props: true,
       },
+      {
+        path: 'about',
+        name: 'about',
+        component: () => import('pages/AboutMe.vue'),
+      },
     ],
   },
 

@@ -17,6 +17,4 @@ import ArticleCard from 'src/components/ArticleCard.vue';
 
 const useArticlesStore = ArticlesStore();
 const articles = ref(useArticlesStore.getArticles);
-
-console.log(articles);
 </script>

@@ -41,6 +41,17 @@ img {
   -o-user-drag: none;
 }
 
+a {
+  color: $secondary;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+  &:hover {
+    color: cornflowerblue;
+    transition: 0.3s;
+  }
+}
+
 .header {
   color: $primary;
   width: 100%;
@@ -167,5 +178,30 @@ img {
   .form {
     text-align: center;
     margin: 0 auto;
+  }
+}
+
+.about-container {
+  padding: 40px;
+
+  b {
+    font-size: 38px;
+    font-style: italic;
+  }
+
+  .about-image {
+    padding: 15px;
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .about-description {
+    text-align: justify;
+    text-indent: 18px;
+    font-size: 16px !important;
+    margin: 20px 0 20px 0;
   }
 }

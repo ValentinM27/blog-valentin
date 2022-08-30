@@ -1,5 +1,16 @@
 <template>
   <div class="article-container">
+    <q-btn
+      icon="fa-solid fa-arrow-left"
+      label="Retour à l'accueil"
+      outline
+      color="secondary"
+      rounded
+      size="sm"
+      :to="{
+        path: '/',
+      }"
+    />
     <div class="article-title">{{ article.title }}</div>
     <div class="article-date">
       {{ article.date }} |
@@ -20,6 +31,17 @@
         </div>
       </div>
     </div>
+    <div class="align-center">
+      <q-btn
+        icon="fa-solid fa-arrow-up"
+        label="Haut de page"
+        outline
+        color="secondary"
+        rounded
+        size="sm"
+        @click="returnTop()"
+      />
+    </div>
   </div>
 </template>
 
@@ -35,6 +57,13 @@ const article = ref({} as Article);
 const props = defineProps({
   idarticle: { type: String, required: true },
 });
+
+const returnTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+};
 
 onMounted(() => {
   article.value = useArticlesStore.getArticlesById(parseInt(props.idarticle));
