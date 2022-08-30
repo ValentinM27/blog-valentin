@@ -2,7 +2,10 @@
   <div class="about-container">
     <b>Valentin ...</b>
     <div class="about-image">
-      <img src="src/assets/images/me.jpeg" alt="Moi" />
+      <img
+        src="https://drive.google.com/uc?export=view&id=1RpsFaqCARDHvbS_hzdH_kGLCa6AUH4iH"
+        alt="Moi"
+      />
     </div>
 
     <div class="about-description">

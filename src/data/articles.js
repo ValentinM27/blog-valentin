@@ -2,7 +2,8 @@ const ArticlesData = [
   {
     id: 1,
     date: '30-08-2022',
-    pictureUrl: 'src/assets/resources/hello_1.jpg',
+    pictureUrl:
+      'https://drive.google.com/uc?export=view&id=11rVD-cNivvwldKbbaFaPley9ZexV817x',
     paragraphs: [
       {
         id: 1,
