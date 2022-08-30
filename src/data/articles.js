@@ -1,26 +1,31 @@
 const ArticlesData = [
   {
     id: 1,
-    date: '28-08-2022',
-    pictureUrl: 'src/assets/resources/vue.png',
+    date: '30-08-2022',
+    pictureUrl: 'src/assets/resources/hello_1.jpg',
     paragraphs: [
       {
         id: 1,
-        subtitle: 'Lorem Ipsum',
+        subtitle: 'Ce site',
         content:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu diam laoreet, viverra purus sit amet, facilisis sem. Sed convallis molestie lorem, vel volutpat nibh. Praesent placerat id dolor sollicitudin accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean elementum eget mauris a tempor. Fusce sit amet aliquet arcu. Donec enim diam, aliquam in elementum sed, porttitor id nisl. Mauris laoreet, nisi sollicitudin pharetra pulvinar, lectus ex elementum purus, eu feugiat urna arcu eget turpis. Donec finibus tincidunt tempor. In ultricies odio vitae urna finibus, a sagittis sem accumsan. Fusce eget vehicula sapien. Curabitur enim ligula, ornare vel ligula sed, dictum tempor purus. Nullam neque ante, mollis et rhoncus at, varius in est. Aliquam ornare consequat mauris at lacinia. Vivamus a purus in leo ultricies faucibus et fringilla sapien. Suspendisse potenti.',
+          "Ce site à pour but de vous partager de multiples publications aux buts distincts. Présentation de projet, retour d'expérience sur une technologie, réaction à l'actu tech ... ",
       },
       {
         id: 2,
+        subtitle: 'Les technologies autour du site',
         content:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu diam laoreet, viverra purus sit amet, facilisis sem. Sed convallis molestie lorem, vel volutpat nibh. Praesent placerat id dolor sollicitudin accumsan. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean elementum eget mauris a tempor. Fusce sit amet aliquet arcu. Donec enim diam, aliquam in elementum sed, porttitor id nisl. Mauris laoreet, nisi sollicitudin pharetra pulvinar, lectus ex elementum purus, eu feugiat urna arcu eget turpis. Donec finibus tincidunt tempor. In ultricies odio vitae urna finibus, a sagittis sem accumsan. Fusce eget vehicula sapien. Curabitur enim ligula, ornare vel ligula sed, dictum tempor purus. Nullam neque ante, mollis et rhoncus at, varius in est. Aliquam ornare consequat mauris at lacinia. Vivamus a purus in leo ultricies faucibus et fringilla sapien. Suspendisse potenti.',
-        subtitle: 'Conclusion',
+          "J'ai utilisé Vue3 et Quasar pour réaliser ce site, technos que j'ai eu à utiliser en entreprise et qui m'ont tout de suite séduites. Elles proposent une courbe d'apprentissage parfaite, qui permet une prise en main facile et une montée en compétences rapides. Vue3 fera d'ailleurs l'objet d'un retour d'expérience 😉",
+      },
+      {
+        id: 3,
+        subtitle: "You're welcome",
+        content:
+          "Merci pour le temps que vous avez dédié à lire cette petite présentation, n'hésitez pas à m'ajouter sur LinkedIn pour me faire des retours sur mes futures publications !",
       },
     ],
-    tags: ['vue', 'Quasar', 'articles'],
-    title: 'Ce site, Vue3 et Quasar',
-    summary:
-      'Ce site a pour but de présenter des articles. Il est réalisé en Vue3 et Quasar',
+    tags: ['présentation', 'vue', 'quasar'],
+    title: 'Bienvenue',
+    summary: 'Présentation du site et message de bienvenue',
   },
 ];
 

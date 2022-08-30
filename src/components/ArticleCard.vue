@@ -24,6 +24,21 @@
     <div>
       {{ props.article.summary }}
     </div>
+    <div class="article-btn">
+      <q-btn
+        :to="{
+          name: 'article',
+          params: {
+            idarticle: props.article.id,
+          },
+        }"
+        rounded
+        flat
+        icon="fa fa-arrow-right"
+        label="lire"
+        color="secondary"
+      />
+    </div>
   </div>
 </template>
 
