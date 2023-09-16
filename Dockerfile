@@ -1,4 +1,4 @@
-FROM node:alpine3.18 as build
+FROM node:18 as build-stage
 
 WORKDIR /app
 
@@ -12,4 +12,10 @@ COPY . .
 
 RUN quasar build
 
-COPY /app/dist/spa /usr/share/nginx/html/quasar
+FROM nginx:alpine
+
+COPY --from=build-stage /app/dist/spa /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
