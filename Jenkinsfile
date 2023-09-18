@@ -19,7 +19,7 @@ pipeline {
                         sh "docker rm blog"
                     }
 
-                    sh "docker run -d --name blog --network=nginx_infra blog"
+                    sh "docker run -d --name blog --network=app blog"
                 }
             }
         }
