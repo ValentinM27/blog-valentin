@@ -18,4 +18,10 @@ COPY --from=build-stage /app/dist/spa /usr/share/nginx/html
 
 EXPOSE 80
 
+# TRAEFIK
+LABEL "traefik.enable"="true" \
+      "traefik.http.routers.blog.rule"="Host(`blog.valentinmarguerie.fr`)" \
+      "traefik.http.routers.blog.entrypoints"="websecure" \
+      "traefik.http.services.blog.loadbalancer.server.port"="80"
+
 CMD ["nginx", "-g", "daemon off;"]
