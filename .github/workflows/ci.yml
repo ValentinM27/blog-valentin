@@ -1,0 +1,21 @@
+name: Deploy using pipelines
+
+on:
+  push:
+    branches: ['master']
+  pull_request:
+    branches: ['master']
+
+jobs:
+  pipelines:
+    uses: ValentinM27/pipelines/.github/workflows/docker-ci.yml@main
+    with:
+      IMAGE_NAME: ${{ vars.IMAGE_NAME }}
+    secrets:
+      REGISTRY_URL: ${{ secrets.REGISTRY_URL }}
+      REGISTRY_USERNAME: ${{ secrets.REGISTRY_USERNAME }}
+      REGISTRY_PASSWORD: ${{ secrets.REGISTRY_PASSWORD }}
+      SERVER_PASSWD: ${{ secrets.SERVER_PASSWD }}
+      SERVER_PORT: ${{ secrets.SERVER_PORT }}
+      SERVER_URL: ${{ secrets.SERVER_URL }}
+      SERVER_USERNAME: ${{ secrets.SERVER_USERNAME }}
